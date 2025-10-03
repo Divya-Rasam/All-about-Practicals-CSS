@@ -1,0 +1,71 @@
+/* <!-- 1. Style all <h1> tags with blue text and bottom border            
+    Create a CSS rule to style all <h1> tags with blue text and a bottom border. --> */
+    
+h1 {
+    color : blue;
+    border-bottom: 2px solid black;
+}
+
+
+
+/* <!-- 2. Center a div horizontally and vertically using Flexbox   
+ Center a div horizontally and vertically using Flexbox.--> */
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*     ---------------------------------------
+<!-- 3. Responsive navigation bar with hamburger (mobile)          
+ Create a responsive navigation bar that collapses into a hamburger menu on mobile.   --> */
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+
+/* <!-- 4. Card component (Image, title, description, button + hover scale)      
+    Design a card component with:
+    Image, title, description, and a button.
+    Add a hover effect that scales the card.  --> */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+/* ------------------------------------- */
+.card :hover {
+    /* scale: ; */
+}
+
+
+
+
+
+/* <!-- 5. Dropdown menu (pure CSS, no JS)      
+ Create a dropdown menu using pure CSS (no JavaScript).  --> */
+
+.dropdown {
+
+}
+
+
+
+
+
+/* <!-- 6. Responsive grid layout (3 columns desktop → 1 column mobile) 
+       Build a responsive grid layout using CSS Grid wit */
+

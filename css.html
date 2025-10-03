@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+<!-- Create a CSS rule to style all <h1> tags with blue text and a bottom border.
+Center a div horizontally and vertically using Flexbox.
+Create a responsive navigation bar that collapses into a hamburger menu on mobile.
+Design a card component with:
+Image, title, description, and a button.
+Add a hover effect that scales the card.
+Create a dropdown menu using pure CSS (no JavaScript).
+Build a responsive grid layout using CSS Grid with 3 columns on desktop and 1 column on mobile.
+Style a form with:
+Rounded borders, background color, and a focus effect.
+Create a loading spinner using CSS animations.
+Design a footer with 3 columns (About, Links, Contact) using Flexbox.
+Create a sticky header that remains fixed at the top while scrolling. -->
+
+
+
+<!-- 1. Style all <h1> tags with blue text and bottom border            
+    Create a CSS rule to style all <h1> tags with blue text and a bottom border. -->
+<h1>My Website Heading</h1>
+
+
+<!-- 2. Center a div horizontally and vertically using Flexbox   
+ Center a div horizontally and vertically using Flexbox.-->
+<div class="parent">
+  <div class="child">Centered Content</div>
+</div>
+
+
+<!-- 3. Responsive navigation bar with hamburger (mobile)          
+ Create a responsive navigation bar that collapses into a hamburger menu on mobile.   -->
+<nav class="navbar">
+  <div class="logo">MyLogo</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="hamburger">&#9776;</div> <!-- Hamburger icon -->
+</nav>
+
+
+<!-- 4. Card component (Image, title, description, button + hover scale)      
+    Design a card component with:
+    Image, title, description, and a button.
+    Add a hover effect that scales the card.  -->
+<div class="card">
+  <img src="image.png" alt="Card Image" width="300px" height="300px">
+  <h2>Trafalgar D Water Law</h2>
+  <p>This is a short description of the card content.</p>
+  <button>Read More</button>
+</div>
+
+<br>
+
+
+<!-- 5. Dropdown menu (pure CSS, no JS)      
+ Create a dropdown menu using pure CSS (no JavaScript).  -->
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+    <a href="#">Option 3</a>
+  </div>
+</div>
+
+<br>
+
+<!-- 6. Responsive grid layout (3 columns desktop → 1 column mobile) 
+       Build a responsive grid layout using CSS Grid with 3 columns on desktop and 1 column on mobile.      -->
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item">Item 4</div>
+  <div class="grid-item">Item 5</div>
+  <div class="grid-item">Item 6</div>
+</div>
+
+
+
+<!-- 7. Styled form (rounded borders, background, focus effect)          
+ Style a form with:
+Rounded borders, background color, and a focus effect.     -->
+<form class="my-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+<!-- 8. Loading spinner (CSS animations) 
+    Create a loading spinner using CSS animations. -->
+<div class="spinner"></div>
+
+
+<!-- 9. Footer with 3 columns (About, Links, Contact) 
+    Design a footer with 3 columns (About, Links, Contact) using Flexbox. -->
+<footer class="footer">
+  <div class="footer-col">
+    <h3>About</h3>
+    <p>Short description about the company.</p>
+  </div>
+  <div class="footer-col">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h3>Contact</h3>
+    <p>Email: info@example.com</p>
+    <p>Phone: +123 456 7890</p>
+  </div>
+</footer>
+
+
+<!-- 10. Sticky header 
+    Create a sticky header that remains fixed at the top while scrolling. -->
+<header class="header">
+  <h1>My Sticky Header</h1>
+</header>
+
+<main>
+  <p>Scroll down to see the sticky effect...</p>
+  <p>Lorem ipsum dolor sit amet...</p>
+  <p style="height: 1500px;"></p> <!-- just for scrolling -->
+</main>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
