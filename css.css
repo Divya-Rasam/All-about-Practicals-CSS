@@ -15,19 +15,64 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 
 
-/*     ---------------------------------------
-<!-- 3. Responsive navigation bar with hamburger (mobile)          
- Create a responsive navigation bar that collapses into a hamburger menu on mobile.   --> */
+
+
+
+
+
+
+/* <!-- 3. Responsive navigation bar with hamburger (mobile)          
+ Create a responsive navigation bar that collapses into a hamburger menu on mobile.   --> */ */
 
 .navbar {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 10px 20px;
 }
 
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+.hamburger {
+    display: none;
+    padding: 5px;
+}
+
+@media (max-width : 768px) {
+    .nav-links {
+        display: none
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
 
 
 
@@ -41,15 +86,49 @@ h1 {
 .card {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    max-width: 300px;
     background-color: antiquewhite;
     padding: 5px;
+    transition: transform 0.3s;
+    text-align: center;
 }
 
 /* ------------------------------------- */
-.card :hover {
-    /* scale: ; */
+.card:hover {
+    transform: scale(1.05);
+    /* transition: transform 0.3s; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.card img {
+  width: 100%;
+  height: auto; /* keeps image ratio */
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #2980b9;
+}
+
+
 
 
 
@@ -69,3 +148,78 @@ h1 {
 /* <!-- 6. Responsive grid layout (3 columns desktop → 1 column mobile) 
        Build a responsive grid layout using CSS Grid wit */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 3;
+}
+/* 
+@media screen(720px) {
+    
+}
+ */
+
+
+
+
+
+
+/* <!-- 7. Styled form (rounded borders, background, focus effect)          
+ Style a form with:
+Rounded borders, background color, and a focus effect.     --> */
+
+.my-form {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.my-form input:focus {
+    border: 5px solid bisque;
+}
+
+
+
+
+
+
+
+
+/* <!-- 8. Loading spinner (CSS animations) 
+    Create a loading spinner using CSS animations. --> */
+
+.spinner {
+    transform: spinner;
+}
+
+
+
+
+
+
+
+
+
+
+/* <!-- 9. Footer with 3 columns (About, Links, Contact) 
+    Design a footer with 3 columns (About, Links, Contact) using Flexbox. --> */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* <!-- 10. Sticky header 
+    Create a sticky header that remains fixed at the top while scrolling. --> */
+
+.header {
+    position: sticky;
+}
