@@ -137,9 +137,68 @@ h1 {
 /* <!-- 5. Dropdown menu (pure CSS, no JS)      
  Create a dropdown menu using pure CSS (no JavaScript).  --> */
 
+ /* Dropdown container */
 .dropdown {
-
+    position: relative;
+    display: inline-block;
 }
+
+/* Button styling */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effects for links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown when hovered */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Change button color on hover */
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,13 +209,31 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
-/* 
-@media screen(720px) {
-    
+
+
+@media (max-width : 720px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
